@@ -47,7 +47,15 @@ public class GameManager : MonoBehaviour
 
     public void FinishRace(string winner)
     {
-        endgameText.text = "WINNER:\n" + winner;
+        if (winner.Equals(nameText.text))
+        {
+            endgameText.text = "YOU WIN\n";
+        }
+        else
+        {
+            endgameText.text = "YOU LOSE\n";
+        }
+        endgameText.text += "1st place: " + winner;
         gameOver = true;
         UpdateUI();
     }
