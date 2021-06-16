@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class RacerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string racerType;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
